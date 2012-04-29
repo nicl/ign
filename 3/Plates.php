@@ -63,7 +63,6 @@ class Plates
         // upper bound is used to avoid unecessary loops
         for ($x = 0; $x <= $this->upperBound; $x += 1) {
             for ($y = 0; $x + $y <= $this->upperBound; $y += 1) {
-                // special handling for population = 1
                 if ($x === 0 && $y === 0) {
                     $plates = 0;
                 }
