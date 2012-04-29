@@ -1,0 +1,139 @@
+@media screen, projection {
+
+    * {
+        margin: 0;
+        padding: 0;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .clearfix:after {
+        clear: both;
+        content: " ";
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+
+    body {
+        font-family: "Linux Libertine", Palatino, "Palatino Linotype", "Book Antiqua", Georgia, "Times New Roman", serif;
+    }
+
+    h1, h2, h3 {
+        font-weight: normal;
+    }
+
+    h1 {
+        text-transform: uppercase;
+    }
+
+    ul {
+        list-style: none outside none;
+    }
+
+    li {
+        width: 33.33%;
+        height: 42px;
+        float: left;
+        text-align: center;
+    }
+
+    ul li a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    ul li a:hover {
+        background-color:#000;
+        -webkit-transition: 0.2s ease-in;
+        -moz-transition: 0.2s ease-in;
+        -o-transition: 0.2s ease-in;
+        transition: 0.2s ease-in;
+    }
+
+    header, #main {
+        width: 85%;
+        margin: 2em auto 0;
+    }
+
+    #main {
+        margin-bottom: 2em;
+    }
+
+    footer {
+        padding: 2em 0;
+    }
+
+    footer .footer-inner {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    article img {
+        height: auto;
+        width: 100%;
+    }
+
+    article p {
+        font-size: 2em;
+        line-height: 2em;
+    }
+
+    section {
+        margin-top: 32px;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (min-width: 640px) {
+
+    nav {
+        width: 55%;
+        float: right;
+    }
+
+    footer .footer-inner {
+        position: relative;
+    }
+
+    li {
+        width: 20%;
+    }
+
+    #github {
+        float: right;
+    }
+
+}
+
+@media screen and (min-width: 960px) {
+
+    section {
+        width: 30%;
+        float: left;
+    }
+
+    section + section {
+        width: 35%;
+        padding-left: 5%;
+    }
+
+    #main-image {
+        width: 50%;
+        float: right;
+        padding-left: 5%;
+    }
+
+}
+
+@media screen and (min-width: 1600px) {
+
+    header, footer .footer-inner, #main {
+        width: 1200px;
+    }
+
+}

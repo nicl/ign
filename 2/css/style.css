@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "Linux Libertine";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Linux Libertine"), url("../fonts/LinLibertine_R.woff") format("woff"), url("../fonts/LinLibertine_R.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Linux Libertine";
+    font-style: normal;
+    font-weight: bold;
+    src: local("Linux Libertine"), url("../fonts/LinLibertine_RB.woff") format("woff"), url("../fonts/LinLibertine_RB.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Linux Libertine";
+    font-style: italic;
+    font-weight: normal;
+    src: local("Linux Libertine"), url("../fonts/LinLibertine_RI.woff") format("woff"), url("../fonts/LinLibertine_RI.ttf") format("truetype");
+}
+
+a:link {
+    text-decoration: none;
+    color: #2aa198;
+}
+
+a:visited {
+    color: #657B83;
+}
+
+a:hover {
+    border-bottom: 1px dotted #2aa198;
+}
+
+a:active {}
+
+body {
+    line-height: 1.5em;
+    background-color: #FDF6E3;
+    color: #657B83;
+}
+
+h1, h2, h3 {
+    color: #B58900;
+}
+
+ul li a:link {
+    background-color: #EEE8D5;
+    color: #657B83;
+}
+
+ul li a:hover {
+    border-bottom: none;
+    background-color: #93A1A1;
+    color: #EEE8D5;
+    -webkit-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+}
+
+footer {
+    background-color: #EEE8D5;
+}
