@@ -21,7 +21,7 @@ class Plates
             throw new Exception('Must be an integer population!');
         }
 
-        $this->population = $population;
+        $this->population = (int) $population;
     }
 
     public function getPattern()
@@ -33,14 +33,21 @@ class Plates
     /**
      * Get the upper bound
      *
-     * The maximum elements required
+     * The maximum elements required (e.g. assuming using only numbers)
      *
      * @return Plates
      */
     protected function setUpperBound()
     {
-        $this->upperBound = (int) ceil(
-            (log($this->population) / log(self::numbers)));
+        // special handling for population = 1
+        if ($this->population === 1) {
+            $this->upperBound = 1;
+        }
+        else {
+            $this->upperBound = (int) ceil(
+                (log($this->population) / log(self::numbers)));
+        }
+
         return $this;
     }
 
@@ -56,7 +63,13 @@ class Plates
         // upper bound is used to avoid unecessary loops
         for ($x = 0; $x <= $this->upperBound; $x += 1) {
             for ($y = 0; $x + $y <= $this->upperBound; $y += 1) {
-                $plates = pow(10, $x) * pow(26, $y); // number of plates
+                // special handling for population = 1
+                if ($x === 0 && $y === 0) {
+                    $plates = 0;
+                }
+                else {
+                    $plates = pow(10, $x) * pow(26, $y);
+                }
                 if ($plates >= $this->population ) {
                     // reset upperBound save iterating over entire set
                     $this->upperBound = $x + $y;
