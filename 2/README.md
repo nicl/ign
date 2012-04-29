@@ -16,7 +16,7 @@ This is in contrast to a fixed-width layout, where widths are typically defined 
 Why use a liquid layout (and limitations)
 -----------------------------------------
 
-###The web is not print media (supporting multiple user-agents)
+###The web is not print media / Supporting multiple user-agents
 
 The web is not like print-media. A website can be accessed by a wide-variety of devices, with different screen resolutions, pixel densities, and other supported features. Liquid designs are better able to cater for a wider-range of devices than a fixed-width design because, in a limited way, they adapt to the user-agent (namely, the width). In this way, they can make better use of the available screen real estate, avoiding horizontal scrolling or, in the case of a very wide screen, large areas of unused space.
 
@@ -25,8 +25,6 @@ However, liquid layouts represent only a partial attempt to adapt to different u
 Recently, more comprehensive approaches to being 'device-agnostic' have emerged. 'Responsive' and 'Adaptive' designs use CSS media queries (or perhaps Javascript) to adapt or respond to the user-device. So, for example, in the two-column layout mentioned earlier, a more sensible approach might be to collapse down to one column (stacking the old columns vertically, or perhaps hiding some) as the screen approaches narrower resolutions. We may also want to change the text or image sizes - or, perhaps, even serve smaller images (in terms of filesize) if we suspect that lower-resolution devices will in general have slower internet access.*
 
 *This is not necessarily true in the USA/UK anymore, but is almost certainly the case when we consider users from other parts of the world, India and China for example.
-
-###Content-management
 
 Our approach and reasoning behind it
 ------------------------------------

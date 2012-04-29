@@ -17,7 +17,7 @@ According to the International Table Tennis Federation (ITTF) a table tennis bal
 
 Ping pong balls are not squares; for a given diameter/side, they can be packed together more tightly.
 
-In fact, there are several ways in which spheres can be packed, with different packing densities (the proportion of the total space occupied by the spheres themselves). The problem of finding the sphere packing with the greatest packing density is known as the 'Kepler conjecture' and a substantial literature exists for the subject.
+In fact, there are several ways in which spheres can be packed, with different packing densities (the proportion of the total space occupied by the spheres themselves). The problem of finding the sphere packing with the greatest packing density is known as the 'Kepler Problem' and a substantial literature exists for the subject.
 
 According to [this](http://mathworld.wolfram.com/SpherePacking.html) article on Wolfram Alpha - I have not had time to survey the literature in depth myself(!) - the best known packing strategy is 'cubic' or 'hexagonal' close packing.
 
