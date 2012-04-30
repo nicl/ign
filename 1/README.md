@@ -21,23 +21,23 @@ In fact, there are several ways in which spheres can be packed, with different p
 
 According to [this](http://mathworld.wolfram.com/SpherePacking.html) article on Wolfram Alpha - I have not had time to survey the literature in depth myself(!) - the best known packing strategy is 'cubic' or 'hexagonal' close packing.
 
-These approaches yield a packing density of &#003C0; / (3 &#x221A; (2))
+These approaches yield a packing density of &#960; / (3 &#x221A;2)
 
 (Or, roughly, 0.7405).
 
 Conversely, the loosest possible density (Gardner, 1966) is supposed to be 0.0555.
 
-###Step 2. What kind of 'average'?
+###Step 3. What kind of 'average'?
 
 An average can be any measure of central tendency. Three well-known types are the mean, median, and mode.
 
-###Step 3. Find or estimate bus internal volume
+###Step 4. Find or estimate bus internal volume
 
 Bus volume might be available from a manufacturer's specifications. If not, an estimate would have to be made. We could fill it up with water (if it were water-tight), or attempt a rough estimate by physical measurement with a tape.
 
 Depending on the type of average preferred, we may or may not have to combine estimates.
 
-###Step 4. Calculate
+###Step 5. Calculate
 
 We can calculate a rough answer by combining our knowledge of ping pong and bus dimensions, and sphere packing densities.
 
@@ -45,9 +45,9 @@ We can calculate a rough answer by combining our knowledge of ping pong and bus 
 
 Note, the volume of a sphere is:
 
-V = (4/3)&#003C0;r^3
+V = (4/3)&#960;r^3
 
-###Step 5. But how do you close the bus door?
+###Step 6. But how do you close the bus door?
 
 Hahahaha...
 
@@ -62,6 +62,6 @@ Using:
 
 Then the answer is:
 
-(10 x 2.5 x 2) * 0.7405 / ((4/3)&#003C0;0.02^3)
+(10 x 2.5 x 2) * 0.7405 / ((4/3)&#960;0.02^3)
 
 = 1,104,883 (rounded down)
