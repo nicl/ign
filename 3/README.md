@@ -56,7 +56,7 @@ min:    p - 10^x 26^y ((x + y)! / (x! y!))
 
 So to get integer solutions we cannot simply use differentiation to solve for min values and then round.
 
-I have not yet found a solution to solving this problem. In either case, the favoured interpretation above seems more realistic scenario (we don't want really long license plate numbers!).
+I have not yet found a solution to solving this problem. In either case, the favoured interpretation above seems more realistic scenario (we generally prefer shorter license plates).
 
 A note of numbers in PHP
 ------------------------
