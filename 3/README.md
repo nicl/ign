@@ -16,7 +16,7 @@ In fact this question is not perfectly clear as these two sentences conflict:
 
 => suggests best pattern is that which minimises the number of excess plates. (The number of letters and numbers in the pattern is irrelevant here.)
 
-It is obvious that these two requirements can conflict. For example, if the number of plates required is 20 then the best solution according to (1) is to use 1 letter and no numbers. But the best solution according to(2) is to use 2 numbers and no letters.
+These two requirements can conflict.
 
 Our interpretation
 ------------------
